@@ -617,7 +617,7 @@ DRR["4e"] = Instance.new("ScrollingFrame", DRR["4a"]);
 DRR["4e"]["Active"] = true;
 DRR["4e"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
 DRR["4e"]["BorderSizePixel"] = 0;
-DRR["4e"]["CanvasSize"] = UDim2.new(0, 0, 0.10000000149011612, 0);
+DRR["4e"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
 DRR["4e"]["MidImage"] = [[]];
 DRR["4e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 DRR["4e"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
@@ -1163,7 +1163,7 @@ DRR["89"]["BorderSizePixel"] = 0;
 DRR["89"]["BackgroundColor3"] = Color3.fromRGB(40, 45, 62);
 DRR["89"]["Selectable"] = false;
 DRR["89"]["Visible"] = false;
-DRR["89"]["Size"] = UDim2.new(0.9995859265327454, 0, 0.17368526756763458, 0);
+DRR["89"]["Size"] = UDim2.new(0.9995859265327454, 0, 0, 32);
 DRR["89"]["Name"] = [[DropdownButton]];
 DRR["89"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 DRR["89"]["Position"] = UDim2.new(0.08656254410743713, 0, 0, 0);
@@ -1763,7 +1763,7 @@ function UILIB.newTab(name, img)
 			
 			if newdd.Box.Visible == false then
 				newdd.Box.Visible = true
-				local twPos = twServ:Create(newdd.Box, TweenInfo.new(0.15), {Size = UDim2.new(0.97, 0,1.696, 0)})
+				local twPos = twServ:Create(newdd.Box, TweenInfo.new(0.15), {Size = UDim2.new(0.97, 0, 0, math.min(#listTable * 32, 192))})
 				twPos:Play()
 			elseif newdd.Box.Visible == true then
 				local twPos = twServ:Create(newdd.Box, TweenInfo.new(0.15), {Size = UDim2.new(0.97, 0,0, 0)})
